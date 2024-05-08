@@ -1,5 +1,5 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("TESTTTTTTTTTTTT!");
+        System.out.println("THIS IS THE LAST TEST");
     }
 }

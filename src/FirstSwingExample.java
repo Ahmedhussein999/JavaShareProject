@@ -1,17 +1,32 @@
-import javax.swing.JButton;
-import javax.swing.JFrame;  
-public class FirstSwingExample {  
-    
-public static void main(String[] args) {  
-JFrame f=new JFrame();//creating instance of JFrame  
-          
-JButton b=new JButton("click");//creating instance of JButton  
-b.setBounds(130,100,100, 40);//x axis, y axis, width, height  
-          
-f.add(b);//adding button in JFrame  
-          
-f.setSize(400,500);//400 width and 500 height  
-f.setLayout(null);//using no layout managers  
-f.setVisible(true);//making the frame visible  
-}  
-}  
+// Java Swing Program to demonstrate
+// a simple JFrame
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+// Driver Class
+public class FirstSwingExample {
+	// main function
+	public static void main(String[] args)
+	{
+		// Create a new JFrame
+		JFrame frame = new JFrame("random number genrator");
+
+		// Create a label
+		JLabel label
+			= new JLabel("Geeks Premier League 2023");
+
+		// Add the label to the frame
+		frame.add(label);
+
+		// Set frame properties
+		frame.setSize(300,
+					200); // Set the size of the frame
+
+		// Close operation
+		frame.setDefaultCloseOperation(
+			JFrame.EXIT_ON_CLOSE);
+
+		// Make the frame visible
+		frame.setVisible(true);
+	}
+}

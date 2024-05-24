@@ -1,24 +1,23 @@
-import javax.swing.JFrame;
+//module of the random genrator 
+import java.util.Random;
 
-// MAIN CLASS FOR THE PROGRAM
+//the class of the random genrtor 
 public class random {
+    private Random random;
+//this instialses the random function
+    public random() {
+        this.random = new Random();
+    }
+ public int generateRandomInt(int min, int max) {
+        return random.nextInt(max - min + 1) + min;
+    }
+    public static void main(String[] args) {
+        random generator = new random();
 
-	public static void main(String[] args)
-	{
-	
-		JFrame frame = new JFrame("Random number game!");
-
-		JFrame f=new JFrame("Button Example");
-		JFrame b=new JFrame("Click Here");
-		b.setBounds(50,100,95,30);
-		b.add(b);
-		b.setSize(400,400);
-		f.add(f);
-		f.setSize(400,400);
-
-		frame.setDefaultCloseOperation(
-			JFrame.EXIT_ON_CLOSE);
-
-		frame.setVisible(true);
-	}
+        // this will gentorate 3 numbers that will be displayed with Jframe later on.
+        for (int i = 0; i < 3; i++) {
+            int randomInt = generator.generateRandomInt(1, 100);
+            System.out.println("Random Integer " + (i + 1) + ": " + randomInt);
+        }
+    }
 }

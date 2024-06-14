@@ -8,6 +8,7 @@ public class random {
     public random() {
         this.random = new Random();
     }
+    //make the var min and max and adds and misunus number till it is random
  public int generateRandomInt(int min, int max) {
         return random.nextInt(max - min + 1) + min;
     }
